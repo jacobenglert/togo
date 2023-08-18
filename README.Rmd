@@ -34,13 +34,13 @@ Here is quick summary of the findings for the global models:
 knitr::include_graphics(here::here('Figures','min_model.png'))
 ```
 
-As far as minimum monthly average temperatures go, we see an overall average increasing trend of approximately .032 $^\circ$C per year. Some cities, such as Mango, have much greater variability in temperatures, but the trend persists. In other cities like Niamtougou, observed temperatures do not appear to be rising as dramatically, but we still expect an increase due to the overall global trend.
+As far as minimum monthly average temperatures go, we see an overall average increasing trend of approximately .032 degrees Celsius per year. Some cities, such as Mango, have much greater variability in temperatures, but the trend persists. In other cities like Niamtougou, observed temperatures do not appear to be rising as dramatically, but we still expect an increase due to the overall global trend.
 
 ```{r, echo = FALSE, fig.cap='Global Maximum Model Fit', fig.align='center', out.width='80%'}
 knitr::include_graphics(here::here('Figures','max_model.png'))
 ```
 
-In the average monthly maximum temperatures, the increasing trend of 0.019 $^\circ$C per year is not quite as alarming as the trend in the minima, but worrisome nonetheless. Once again, there is heterogeneity across cities, but the global trend persist throughout most and the singular spectrum analysis appears to have adequately captured seasonal trends.
+In the average monthly maximum temperatures, the increasing trend of 0.019 degrees Celsius per year is not quite as alarming as the trend in the minima, but worrisome nonetheless. Once again, there is heterogeneity across cities, but the global trend persist throughout most and the singular spectrum analysis appears to have adequately captured seasonal trends.
 
 ## 3D Visualization of the impact of Geography
 Here I've included an interactive 3D visualization of the impact of latitude and longitude on both models. While I cannot share the data, feel free to download the models from the `Output` folder and run the following code to create your own versions of these to play around with.

@@ -52,11 +52,11 @@ Global Minimum Model Fit
 </div>
 
 As far as minimum monthly average temperatures go, we see an overall
-average increasing trend of approximately .032 $^\circ$C per year. Some
-cities, such as Mango, have much greater variability in temperatures,
-but the trend persists. In other cities like Niamtougou, observed
-temperatures do not appear to be rising as dramatically, but we still
-expect an increase due to the overall global trend.
+average increasing trend of approximately .032 degrees Celsius per year.
+Some cities, such as Mango, have much greater variability in
+temperatures, but the trend persists. In other cities like Niamtougou,
+observed temperatures do not appear to be rising as dramatically, but we
+still expect an increase due to the overall global trend.
 
 <div class="figure" style="text-align: center">
 
@@ -68,11 +68,11 @@ Global Maximum Model Fit
 </div>
 
 In the average monthly maximum temperatures, the increasing trend of
-0.019 $^\circ$C per year is not quite as alarming as the trend in the
-minima, but worrisome nonetheless. Once again, there is heterogeneity
-across cities, but the global trend persist throughout most and the
-singular spectrum analysis appears to have adequately captured seasonal
-trends.
+0.019 degrees Celsius per year is not quite as alarming as the trend in
+the minima, but worrisome nonetheless. Once again, there is
+heterogeneity across cities, but the global trend persist throughout
+most and the singular spectrum analysis appears to have adequately
+captured seasonal trends.
 
 ## 3D Visualization of the impact of Geography
 
