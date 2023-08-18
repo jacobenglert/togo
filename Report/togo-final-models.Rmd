@@ -16,11 +16,6 @@ rgl::setupKnitr(autoprint = TRUE)
 The main component of the analysis is the identification of important seasonal trends in both sets of temperature data. This is done manually using singular spectrum analysis (SSA). Resulting periods are then incorporated into linear mixed models which also include a random intercept for location and geographical parameters (elevation, longitude, and latitude). Results of the analysis are shown below:
 
 ```{r, echo = FALSE}
-max_model <- readr::read_rds(here::here('Output','max_model.rds'))
-min_model <- readr::read_rds(here::here('Output','min_model.rds'))
-```
-
-```{r, echo = FALSE}
 knitr::include_graphics(here::here('Figures','min_model.png'))
 ```
 
@@ -33,7 +28,14 @@ knitr::include_graphics(here::here('Figures','max_model.png'))
 In the average monthly maximum temperatures, the increasing trend of 0.019 $^\circ$C per year is not quite as alarming as the trend in the minima, but worrisome nonetheless. Once again, there is heterogeneity across cities, but the global trend persist throughout most and the singular spectrum analysis appears to have adequately captured seasonal trends.
 
 ## 3D Visualization of the impact of Geography
-Here I've included an interactive 3D visualization of the impact of latitude and longitude on both models. Feel free to play around with these some.
+Here I've included an interactive 3D visualization of the impact of latitude and longitude on both models. While I cannot share the data, feel free to download the models from the `Output` folder and run the following code to create your own versions of these to play around with.
+
+```{r}
+max_model <- readr::read_rds(here::here('Output','max_model.rds'))
+min_model <- readr::read_rds(here::here('Output','min_model.rds'))
+```
+
+
 ```{r, message = FALSE}
 # Minimum temperature model
 min_geo_coef <- coef(summary(min_model))[c('Longitude','Latitude', 
